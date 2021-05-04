@@ -10,7 +10,7 @@ class App extends React.Component {
     authFunc() {
         const authData = { data: "Autenticar conta WAVES"};
         if (WavesKeeper){
-            WavesKeeper.( authData )
+            WavesKeeper.auth( authData )
             .then(auth => {
                 console.log( auth );
             }).catch(error => {
